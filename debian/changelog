@@ -1,0 +1,24 @@
+ros-hydro-kingfisher-bringup (0.0.2-0quantal) quantal; urgency=high
+
+  * New default compass config from CAN22, plus message about running the calibration.
+  * rosbag in Hydro can't seem to be kill'd properly, so switch to using the --duration parameter.
+  * Add calibrate-compass script from 2013-07 shipment.
+  * Eliminate separate declination apply node.
+  * Respawn the wireless watcher; had an issue with it dying.
+  * Fixes to namespaces and remapping to get things talking properly.
+  * Add the controller launch file to bringup package, at least for now.
+  * Respect the ROBOT_NETWORK and ROBOT_SETUP env vars.
+  * Add the imu and controller config files.
+  * Remove unused library launch files, add kingfisher_controller detection.
+  * Remove serial proxying scripts from bringup package.
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Thu, 24 Oct 2013 04:00:00 -0000
+
+ros-hydro-kingfisher-bringup (0.0.1-0quantal) quantal; urgency=high
+
+  * First cut of kingfisher_bringup as a standalone repo.
+  * Uses robot_upstart.
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Mon, 09 Sep 2013 04:00:00 -0000
+
+

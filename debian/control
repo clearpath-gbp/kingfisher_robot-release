@@ -1,0 +1,12 @@
+Source: ros-hydro-kingfisher-bringup
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-kingfisher-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-camera1394, ros-hydro-compressed-image-transport, ros-hydro-declination, ros-hydro-enu, ros-hydro-image-proc, ros-hydro-imu-compass, ros-hydro-kingfisher-msgs, ros-hydro-nmea-comms, ros-hydro-nmea-navsat-driver, ros-hydro-robot-upstart, ros-hydro-rosserial-python, ros-hydro-rosserial-server, ros-hydro-um6
+Description: Provides upstart setup for Kingfisher, and launch files for the standard configuration. Also provides configuration for u-blox GPS receiver and Point Grey camera which are part of Kingfisher's sensor suite.
